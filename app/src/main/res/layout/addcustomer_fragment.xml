@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Customer"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            style="bolt"
+            android:textColor="@color/white"
+            android:background="@drawable/lenderborder1"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Customer Name"
+            android:background="@drawable/lenderborder2"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/lenderborder2"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/lenderborder2"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:background="@drawable/lenderborder2"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/upiId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:hint="UPI ID (Optional)"
+            android:background="@drawable/lenderborder2"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgMilkType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/lenderborder2"
+            android:padding="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cow"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buffalo"
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAddCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Add Customer"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#1A237E"
+            android:textColor="@android:color/white"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

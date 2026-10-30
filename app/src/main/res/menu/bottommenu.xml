@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="bottom_navigation_view">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home1"/>
+
+    <item
+        android:id="@+id/collection"
+        android:title="Collection"
+        android:icon="@drawable/collection"/>
+
+    <item
+        android:id="@+id/addcustomer"
+        android:title="Add Customers"
+        android:icon="@drawable/coustemers"/>
+
+
+</menu>

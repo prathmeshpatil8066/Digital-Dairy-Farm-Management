@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="#F4F6FA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:text="Logout"
+            android:textColor="#FFF"
+            android:backgroundTint="#D32F2F"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"/>
+
+
+            <TextView
+                android:text="Super Admin Dashboard"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lenderborder2"
+                android:padding="10dp"
+                android:layout_gravity="center"/>
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            card_view:cardElevation="10dp"
+            card_view:cardCornerRadius="16dp"
+            android:background="@drawable/lenderborder2">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/lenderborder2">
+
+                <TextView
+                    android:text="Total Admins"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvTotalAdmins"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="42sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddAdmin"
+            android:text="Add Admin"
+            android:background="@drawable/card_bg"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:backgroundTint="#D9CDCD"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnManageAdmins"
+            android:text="Manage Admins"
+            android:textColor="#FFF"
+            android:background="@drawable/lenderborder1"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDeleteAdmin"
+            android:text="Delete Admin"
+            android:textColor="@color/black"
+            android:backgroundTint="#D9C7C7"
+            android:background="@drawable/card_bg"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+    </LinearLayout>
+
+</ScrollView>

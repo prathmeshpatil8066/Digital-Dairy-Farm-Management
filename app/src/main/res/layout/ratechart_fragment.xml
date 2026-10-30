@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FB"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="@android:color/white"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rate Chart PDF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E"/>
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Rate Chart PDF Uploaded"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#444444"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Upload PDF"
+                    android:textColor="@color/white"
+                    android:background="@drawable/lenderborder1"
+                    android:layout_marginTop="12dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnView"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="View PDF"
+                    android:layout_marginTop="8dp"
+                    android:enabled="false"
+                    android:background="@drawable/lenderborder2"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Delete PDF"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:enabled="false"
+                    android:background="@drawable/lenderborder1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="@android:color/white"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Milk Rates"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#1A237E"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cow Rate (per formula unit)"
+                    android:layout_marginTop="16dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/etCowRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Cow Rate"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/lenderborder2"
+                    android:layout_marginTop="6dp"/>
+
+                <EditText
+                    android:id="@+id/etCowSnfRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Cow SNF Rate"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/lenderborder2"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buffalo Rate (per formula unit)"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/etBuffaloRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Buffalo Rate"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/lenderborder2"
+                    android:layout_marginTop="6dp"/>
+
+                <EditText
+                    android:id="@+id/etBuffaloSnfRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Buffalo SNF Rate"
+                    android:inputType="numberDecimal"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/lenderborder2"
+                    android:layout_marginTop="8dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSaveRates"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Save Rates"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lenderborder1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/home1"/>
+
+        <item
+            android:id="@+id/profile"
+            android:title="Profile"
+            android:icon="@drawable/profile"/>
+
+    </group>
+
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/payment"
+            android:title="Payment"
+            android:icon="@drawable/payment"/>
+
+
+        <item
+            android:id="@+id/totalcollection"
+            android:title="Total Collection"
+            android:icon="@drawable/collection"/>
+
+        <item
+            android:id="@+id/totalcustomer"
+            android:title="Total Customers"
+            android:icon="@drawable/coustemers"/>
+
+
+
+        <item
+            android:id="@+id/customerdetails"
+            android:title="Customer Details"
+            android:icon="@drawable/details"/>
+
+        <item
+            android:id="@+id/paymentinfo"
+            android:title="Payment Information"
+            android:icon="@drawable/payment"/>
+
+        <item
+            android:id="@+id/customersdata"
+            android:title="Customers Data"
+            android:icon="@drawable/today"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/chart"
+            android:title="Rate Chart"
+            android:icon="@drawable/ratechart"/>
+
+        <item
+            android:id="@+id/setting"
+            android:title="Setting"
+            android:icon="@drawable/setting"/>
+
+
+        <item
+            android:id="@+id/suscription"
+            android:title="Suscription"
+            android:icon="@drawable/today"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/logout"/>
+
+    </group>
+
+</menu>

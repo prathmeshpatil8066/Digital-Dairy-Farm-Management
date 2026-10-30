@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1084997921296",
+    "firebase_url": "https://digital-gramin-dairy--farm-default-rtdb.firebaseio.com",
+    "project_id": "digital-gramin-dairy--farm",
+    "storage_bucket": "digital-gramin-dairy--farm.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084997921296:android:383971e60ead1c9cccf895",
+        "android_client_info": {
+          "package_name": "com.example.navigationview"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLyIhM0ENAi755CZLq2ae8j7C0_uEt32Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
